@@ -1,72 +1,61 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-size:50px;
   
-  body {
-    width: 100vw;
-    height: 100vh;
-    background-color: pink;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  hr {
-    background-color: plum;
-    width: 80%;
-    margin: 1rem 0 1rem 0;
-  }
-  
-  .container-card {
-    width: 20rem;
-    height: 30rem;
-    border: groove 4px palevioletred;
-    border-radius: 15px;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .img-character {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    height: 50%;
-    object-fit: contain;
-  }
-  
-  .name-character {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 2rem;
-    color: plum;
-    text-shadow: 0 0 10px palevioletred;
-  }
-  
-  .quote-character {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 1rem;  
-    padding: 0.5rem;
-    color: #b9f3e8;
-  }
-  
-  button {
-    width: 12rem;
-    height: 3rem;
-    border-radius: 15px;
-    color: palevioletred;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  button:hover,
-  button:focus {
-    background-color: plum;
-    color: #4484d8;
-    font-weight: 800;
-  }
-  
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-card {
+  max-width: 1300px;
+  border-radius: 15px;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.img-cat {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.card {
+  width: 250px;
+  border: solid 3px white;
+  border-radius: 10px;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 20px;
+  background-color: rgb(210, 38, 210);
+  border: none;;
+}
+
+button:hover,
+button:focus {
+  background-color: white;
+  color: rgb(210, 38, 210);
+  font-weight: 800;
+}
